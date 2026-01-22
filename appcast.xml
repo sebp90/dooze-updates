@@ -5,6 +5,20 @@
         <description>Most recent updates for Dozen</description>
         <language>en</language>
         <item>
+            <title>1.0.6</title>
+            <pubDate>Wed, 22 Jan 2026 21:15:00 +0000</pubDate>
+            <sparkle:version>7</sparkle:version>
+            <sparkle:shortVersionString>1.0.6</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>What's New</h2>
+                <ul>
+                    <li>Fixed notarization issue that required manual quarantine removal</li>
+                </ul>
+            ]]></description>
+            <enclosure url="https://raw.githubusercontent.com/sebp90/dozen-updates/main/Dozen-Installer.dmg" length="2412757" type="application/octet-stream" sparkle:edSignature="5H2t/fz7Nwzb1kMfxrBiGF83IwvP5VI2mivcHewhHB9wvNUOX7fFsKpAgy1hlgCvmgPNQJETgWQsSDen0hYSAA=="/>
+        </item>
+        <item>
             <title>1.0.5</title>
             <pubDate>Thu, 16 Jan 2026 12:21:00 +0000</pubDate>
             <sparkle:version>6</sparkle:version>
