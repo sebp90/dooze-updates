@@ -19,7 +19,7 @@
                     <li>Auto-refresh JWT tokens after tier/status changes</li>
                 </ul>
             ]]></description>
-            <enclosure url="https://raw.githubusercontent.com/sebp90/dozen-updates/main/Dozen-Installer.dmg" length="953071" type="application/octet-stream" sparkle:edSignature="S8owb5DmcirhcNF8MCjpCGshnhQwzgVpQ2z2xywg1U3cjTHvmOCnLtUSzJhTg447a7uVBpztwsSF8mcLlczHAQ=="/>
+            <enclosure url="https://raw.githubusercontent.com/sebp90/dozen-updates/main/Dozen-Installer.dmg" length="3198383" type="application/octet-stream" sparkle:edSignature="fZz1cxZ49AP38nR+rUauayJuDz8lTg82gj0RVlMziRTK1KUHe6IxidU1b2pPdDYlXYuM6nP6C1BLd9OVE6mEBQ=="/>
         </item>
         <item>
             <title>1.0.6</title>
