@@ -16,7 +16,7 @@
                     <li>Latest updates and improvements</li>
                 </ul>
             ]]></description>
-            <enclosure url="https://raw.githubusercontent.com/sebp90/dooze-updates/main/dooze-Installer.dmg" length="3263633" type="application/octet-stream" sparkle:edSignature="Kh2vvz/xmHoq7F6otC3d/dH9wYGxVIGB8LJsjiuIH12UpgHJGszOFEqeq7eIGwWcCGCEz37kf+2SZ77GV6nNAQ=="/>
+            <enclosure url="https://github.com/sebp90/dooze-updates/releases/download/v1.0.8/dooze-Installer.dmg" length="3263633" type="application/octet-stream" sparkle:edSignature="Kh2vvz/xmHoq7F6otC3d/dH9wYGxVIGB8LJsjiuIH12UpgHJGszOFEqeq7eIGwWcCGCEz37kf+2SZ77GV6nNAQ=="/>
         </item>
         <item>
             <title>1.0.7</title>
