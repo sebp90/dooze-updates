@@ -5,6 +5,20 @@
         <description>Most recent updates for Dooze</description>
         <language>en</language>
         <item>
+            <title>1.0.9</title>
+            <pubDate>Tue, 04 Mar 2026 12:05:00 +0000</pubDate>
+            <sparkle:version>10</sparkle:version>
+            <sparkle:shortVersionString>1.0.9</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>What's New</h2>
+                <ul>
+                    <li>Fixed feedback input focus in Polish/Summarize mode</li>
+                </ul>
+            ]]></description>
+            <enclosure url="https://github.com/sebp90/dooze-updates/releases/download/v1.0.9/dooze-Installer.dmg" length="3263958" type="application/octet-stream" sparkle:edSignature="6Chgv0K7foS0Xs7xXdElXH55ZXBeBqQHAhRJ1Rw1NYQF5b+4GI1MAtCDov0cjjYeP4yq26PIxQEC6gQdebAkBw=="/>
+        </item>
+        <item>
             <title>1.0.8</title>
             <pubDate>Thu, 27 Feb 2026 00:30:00 +0000</pubDate>
             <sparkle:version>9</sparkle:version>
