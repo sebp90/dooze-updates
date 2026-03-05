@@ -5,6 +5,21 @@
         <description>Most recent updates for Dooze</description>
         <language>en</language>
         <item>
+            <title>1.1.0</title>
+            <pubDate>Thu, 06 Mar 2026 14:00:00 +0000</pubDate>
+            <sparkle:version>11</sparkle:version>
+            <sparkle:shortVersionString>1.1.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>What's New</h2>
+                <ul>
+                    <li>Privacy-first image handling: images are now processed locally and never stored on servers</li>
+                    <li>Improved image drop and clipboard support</li>
+                </ul>
+            ]]></description>
+            <enclosure url="https://github.com/sebp90/dooze-updates/releases/download/v1.1.0/dooze-Installer.dmg" length="3363086" type="application/octet-stream" sparkle:edSignature="WlO6hpW+lANwr013pTIt5uaEGyPNn1IbrUGhx/7asgEp+leiWPHffSdKzahmyCY++efA6AWx8izPN4D2pq3MDw=="/>
+        </item>
+        <item>
             <title>1.0.9</title>
             <pubDate>Tue, 04 Mar 2026 12:05:00 +0000</pubDate>
             <sparkle:version>10</sparkle:version>
