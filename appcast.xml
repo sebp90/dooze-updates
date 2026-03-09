@@ -5,6 +5,21 @@
         <description>Most recent updates for Dooze</description>
         <language>en</language>
         <item>
+            <title>1.2.2</title>
+            <pubDate>Sun, 09 Mar 2026 05:45:00 +0000</pubDate>
+            <sparkle:version>14</sparkle:version>
+            <sparkle:shortVersionString>1.2.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>What's New</h2>
+                <ul>
+                    <li>Fixed recovery mode click event routing</li>
+                    <li>Added diagnostic logging for recovery mode</li>
+                </ul>
+            ]]></description>
+            <enclosure url="https://github.com/sebp90/dooze-updates/releases/download/v1.2.2/dooze-Installer.dmg" length="3672640" type="application/octet-stream" sparkle:edSignature="p1o24tr9wNsjrIcYvgaaPTOlIHudYmv8RtNzg8YyxV387MU3SWv8EhaXyc7sFBqJBZR3msT2tmRtdBvmM2LOCw=="/>
+        </item>
+        <item>
             <title>1.2.1</title>
             <pubDate>Sat, 08 Mar 2026 22:15:00 +0000</pubDate>
             <sparkle:version>13</sparkle:version>
