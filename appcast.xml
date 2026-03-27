@@ -5,6 +5,30 @@
         <description>Most recent updates for Dooze</description>
         <language>en</language>
         <item>
+            <title>1.5.0</title>
+            <pubDate>Wed, 26 Mar 2026 00:00:00 +0000</pubDate>
+            <sparkle:version>18</sparkle:version>
+            <sparkle:shortVersionString>1.5.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>On-device AI</h2>
+                <ul>
+                    <li><b>Works offline.</b> dooze now runs AI models directly on your Mac, no internet required</li>
+                    <li>On-device models for every Mac: optimized picks for 8 GB, 16 GB, and 32 GB+ machines</li>
+                    <li>Download and manage local models from Settings</li>
+                    <li>Automatic offline fallback: switches to a local model when you lose connectivity</li>
+                    <li>Dedicated Browser tab in Settings</li>
+                    <li>Fixed panel clipping and geometry bugs</li>
+                    <li>Stale context is cleared automatically on launch</li>
+                </ul>
+            ]]></description>
+            <enclosure
+                url="https://github.com/sebp90/dooze-updates/releases/download/v1.5.0/dooze-Installer.dmg"
+                length="12800475"
+                type="application/octet-stream"
+                sparkle:edSignature="2huttEG0KRM3Ea5dl+AMA1zgJmZXejLqJ2bAsg5FlGeZ99r3taYZity3TFT3B4+9I8yRylab44XrTtBA5cXVAA=="/>
+        </item>
+        <item>
             <title>1.4.0</title>
             <pubDate>Mon, 24 Mar 2026 00:00:00 +0000</pubDate>
             <sparkle:version>17</sparkle:version>
