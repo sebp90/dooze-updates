@@ -5,6 +5,32 @@
         <description>Most recent updates for Dooze</description>
         <language>en</language>
         <item>
+            <title>1.6.0</title>
+            <pubDate>Mon, 06 Apr 2026 00:00:00 +0000</pubDate>
+            <sparkle:version>19</sparkle:version>
+            <sparkle:shortVersionString>1.6.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>What's New in 1.6.0</h2>
+                <ul>
+                    <li><b>Meeting Notetaker.</b> Record meetings with live on-device transcription — free, no cloud required</li>
+                    <li><b>Unified Chat.</b> Polish and Summarize now live inside Chat as intelligent functions</li>
+                    <li><b>Permission prompts.</b> Friendly consent popups for mic, screen recording, and accessibility — no more silent failures</li>
+                    <li><b>Redesigned onboarding.</b> New model download step and single-slide feature showcase</li>
+                    <li><b>Smarter rate limits.</b> Automatic fallback to local models when cloud limits are hit</li>
+                    <li>Voice pre-warm eliminates dropped first words</li>
+                    <li>Meeting transcription improvements: adaptive VAD, hallucination filter</li>
+                    <li>Rewritten local polish and summarize prompts</li>
+                    <li>81 bug fixes and stability improvements</li>
+                </ul>
+            ]]></description>
+            <enclosure
+                url="https://github.com/sebp90/dooze-updates/releases/download/v1.6.0/dooze-Installer.dmg"
+                length="13214839"
+                type="application/octet-stream"
+                sparkle:edSignature="yfPxqB1VXsUWlXA3giKDrwvd2hD5ELio5G/zdBTRKMrgbZLyb4+IctgXBEOqrMO2Asv4XXl1bCRJRqT4oQqmAA=="/>
+        </item>
+        <item>
             <title>1.5.0</title>
             <pubDate>Wed, 26 Mar 2026 00:00:00 +0000</pubDate>
             <sparkle:version>18</sparkle:version>
