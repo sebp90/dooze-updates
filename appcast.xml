@@ -5,6 +5,32 @@
         <description>Most recent updates for Dooze</description>
         <language>en</language>
         <item>
+            <title>1.7.0</title>
+            <pubDate>Wed, 29 Apr 2026 00:00:00 +0000</pubDate>
+            <sparkle:version>20</sparkle:version>
+            <sparkle:shortVersionString>1.7.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>What's New in 1.7.0</h2>
+                <ul>
+                    <li><b>Read Aloud.</b> Listen to anything — paste, a URL, or live clipboard. Use your Mac's premium voices for free, or switch to high-quality cloud voices</li>
+                    <li><b>Voice Mini-Player.</b> Compact player with history, scrub, and instant interrupt-replace. Voice and mode controls live inside the player</li>
+                    <li><b>Sharper memory.</b> Rebuilt retrieval pulls more relevant context from your notes and pinned items, especially on broad or fuzzy questions</li>
+                    <li><b>Sturdier meetings.</b> Recordings save to disk in real time (no more loss on crash), richer Moments, video playback fixes, 20+ notetaker bugs squashed</li>
+                    <li><b>Voice dictation polish.</b> Browser selection capture in more apps, configurable activation keys, no dropped first words</li>
+                    <li>Apple speech voices replace the local Kokoro engine — better quality, lower memory</li>
+                    <li>Sentry crash reporting and 17 force-unwrap crashes eliminated</li>
+                    <li>Mic auto-routes to built-in when Bluetooth output is active</li>
+                    <li>100+ smaller fixes and stability improvements</li>
+                </ul>
+            ]]></description>
+            <enclosure
+                url="https://github.com/sebp90/dooze-updates/releases/download/v1.7.0/dooze-Installer.dmg"
+                length="25290507"
+                type="application/octet-stream"
+                sparkle:edSignature="ULJFr3nKXKKhLW00nZ+xa+LKUYimpgzg9iABsx8k0GMKeRSMjMVUdakLpcKerrfk67gw51MbYPet2VK/ZsDoDw=="/>
+        </item>
+        <item>
             <title>1.6.0</title>
             <pubDate>Mon, 06 Apr 2026 00:00:00 +0000</pubDate>
             <sparkle:version>19</sparkle:version>
