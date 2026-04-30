@@ -5,6 +5,32 @@
         <description>Most recent updates for Dooze</description>
         <language>en</language>
         <item>
+            <title>1.7.1</title>
+            <pubDate>Wed, 29 Apr 2026 20:30:00 +0000</pubDate>
+            <sparkle:version>21</sparkle:version>
+            <sparkle:shortVersionString>1.7.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>What's New in 1.7.1</h2>
+                <p>Critical bug-fix release for issues found in 1.7.0.</p>
+                <ul>
+                    <li><b>Fixed crash on mini-player expand/collapse</b> during active recording</li>
+                    <li><b>Fixed silent meeting playback</b> — recordings now play with full audio</li>
+                    <li><b>Fixed duplicate words</b> at transcription segment boundaries</li>
+                    <li><b>Fixed voice dictation finalize</b> — releasing fn now reliably ends the session</li>
+                    <li><b>Fixed second voice dictation</b> being silently rejected after the first finished</li>
+                    <li>Music now pauses during dictation and resumes when you're done</li>
+                    <li>Long meeting pauses no longer lose their silence audio</li>
+                    <li>Memory retrieval now prefers high-confidence facts under tight token budgets</li>
+                </ul>
+            ]]></description>
+            <enclosure
+                url="https://github.com/sebp90/dooze-updates/releases/download/v1.7.1/dooze-Installer.dmg"
+                length="25301168"
+                type="application/octet-stream"
+                sparkle:edSignature="IZuL8pUfBzUvfSM7+fnY4sekMKj4RtRI1jJtookDIRV5QBmm7pFaF2pSlBh34Y3aY/Ir9I4VYZEJ3uLp8EgvCw=="/>
+        </item>
+        <item>
             <title>1.7.0</title>
             <pubDate>Wed, 29 Apr 2026 00:00:00 +0000</pubDate>
             <sparkle:version>20</sparkle:version>
