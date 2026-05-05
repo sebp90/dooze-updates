@@ -5,6 +5,51 @@
         <description>Most recent updates for Dooze</description>
         <language>en</language>
         <item>
+            <title>1.9.7.1</title>
+            <pubDate>Tue, 05 May 2026 18:20:00 +0000</pubDate>
+            <sparkle:version>22</sparkle:version>
+            <sparkle:shortVersionString>1.9.7.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>What's New in 1.9.7.1</h2>
+                <p>Catch-up release rolling up everything since 1.7.1 plus a critical macOS 26 fix.</p>
+                <h3>Crash fixes</h3>
+                <ul>
+                    <li><b>Past meetings no longer crash the app on macOS 26.4.1.</b> The floating panel resized its hosting view mid-display-cycle, which the new OS treats as fatal. Resizes are now deferred to the next runloop tick. Affects Polish, Chat, and Notetaker transitions too.</li>
+                    <li><b>Voice dictation no longer crashes during the waveform animation.</b> Capture-thread/UI-thread race on WhisperKit's audio energy buffer narrowed to a single property read.</li>
+                </ul>
+                <h3>New</h3>
+                <ul>
+                    <li><b>Ask AI about your meetings.</b> Type <code>@</code> in chat to mention a meeting by name. The AI gets the meeting's summary, notes, and a transcript excerpt so it can answer questions about what was discussed and what was decided.</li>
+                    <li><b>Meeting knowledge extraction.</b> Key facts, commitments, and people from each meeting are automatically extracted into your memory vault. Meetings shorter than a minute are skipped.</li>
+                </ul>
+                <h3>Sign-in &amp; sessions</h3>
+                <ul>
+                    <li><b>Switching back to the app no longer logs you out.</b> Profile refresh on resume retries with a fresh token. Network errors keep you offline instead of signing you out.</li>
+                    <li><b>Sign-in can be cancelled.</b> A cancel button appears during OAuth sign-in, with a 15-second timeout so you're never stuck waiting on a hung server.</li>
+                    <li><b>Logout is local-only on error paths.</b> Only explicit sign-out from Settings revokes the server-side session, preventing accidental session destruction.</li>
+                </ul>
+                <h3>Voice &amp; Read Aloud</h3>
+                <ul>
+                    <li><b>Music pauses and resumes correctly with Spotify.</b> Now uses the dedicated playback-state symbol that all NowPlaying apps populate, not just the rate field Spotify ignores.</li>
+                    <li><b>Music actually stays paused</b> for the full dictation session. The async capture/sync pause race that recorded "wasPlaying = false" and never resumed is fixed.</li>
+                    <li><b>Read aloud in chat stays inline.</b> Tapping "Read aloud" plays in a compact pill next to the message instead of opening a separate panel.</li>
+                </ul>
+                <h3>Meetings &amp; Notetaker</h3>
+                <ul>
+                    <li><b>Past meetings sorted newest-first.</b> Date groups now run reverse chronologically below Today and Yesterday.</li>
+                    <li><b>Text selection works in transcripts and notes.</b> Select and copy across speakers; bookmark jumps still scroll to the right segment.</li>
+                    <li><b>Meeting context pills no longer overlap the chat input.</b> The pill now sits above the text field as a sibling to slash-command pills.</li>
+                </ul>
+                <p>For the full per-version changelog, see the <a href="https://github.com/sebp90/DoozeClient/blob/main/CHANGELOG.md">CHANGELOG</a> on GitHub.</p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/sebp90/dooze-updates/releases/download/v1.9.7.1/dooze-Installer.dmg"
+                length="25414309"
+                type="application/octet-stream"
+                sparkle:edSignature="QDZpCaTiCYA5RpKzy5bPoK1gyt2EOTfqUFrKcv0R1/nViQTiVgnhYJPjlf5u2lrNyqsLMO/L+P/HFpXHT8k4AA=="/>
+        </item>
+        <item>
             <title>1.7.1</title>
             <pubDate>Wed, 29 Apr 2026 20:30:00 +0000</pubDate>
             <sparkle:version>21</sparkle:version>
