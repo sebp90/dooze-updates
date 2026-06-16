@@ -5,6 +5,54 @@
         <description>Most recent updates for Dooze</description>
         <language>en</language>
         <item>
+            <title>1.13.47.0</title>
+            <pubDate>Tue, 16 Jun 2026 17:37:57 +0000</pubDate>
+            <sparkle:version>35</sparkle:version>
+            <sparkle:shortVersionString>1.13.47.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>What's new in 1.13.47</h2>
+                <p>A lot has landed since 1.9.7. The highlights:</p>
+                <h3>Memory</h3>
+                <ul>
+                    <li><b>Dooze now builds a private, on-device memory</b> from your meetings, chats, and voice notes. Ask what you agreed on, who's working on what, or what your action items are, and it answers from your own history. Everything stays local and encrypted; deleting a source removes it from memory.</li>
+                </ul>
+                <h3>Meetings</h3>
+                <ul>
+                    <li><b>Stop is instant.</b> The recorder saves and opens the meeting in a second or two instead of freezing while the transcript finishes.</li>
+                    <li><b>Your live transcript is never lost,</b> even if the final pass is interrupted — recover with Retry.</li>
+                    <li><b>Search across every meeting</b> with &#8984;F, or from Spotlight.</li>
+                    <li><b>Cleaner transcripts:</b> better speaker separation, fewer phantom words, and correct punctuation at pauses.</li>
+                    <li><b>Play back a recording</b> with the transcript following along; click any line to jump.</li>
+                </ul>
+                <h3>Voice dictation</h3>
+                <ul>
+                    <li><b>Double-tap your dictate key to go hands-free.</b> It keeps listening until you pause, tap again, or press Escape.</li>
+                    <li><b>Long dictations no longer duplicate or interleave text.</b></li>
+                </ul>
+                <h3>Read aloud</h3>
+                <ul>
+                    <li><b>Have Dooze read any article or selection out loud,</b> with a redesigned voice picker and premium cloud voices.</li>
+                </ul>
+                <h3>Models &amp; account</h3>
+                <ul>
+                    <li><b>New on-device models,</b> including a larger 12B option for capable Macs, with a clearer model picker.</li>
+                    <li><b>Cloud credit.</b> Redeem a code or top up ($5&#8211;$100) to use cloud models. Dooze falls back to local automatically when credit runs out.</li>
+                </ul>
+                <h3>Sign-in &amp; stability</h3>
+                <ul>
+                    <li><b>Reskinned sign-in</b> and a fix for getting stuck signed out with no way back in.</li>
+                    <li><b>Faster launch, lower memory use,</b> and many crash fixes.</li>
+                </ul>
+                <p>For the full per-version changelog, see the <a href="https://github.com/sebp90/DoozeClient/blob/main/CHANGELOG.md">CHANGELOG</a> on GitHub.</p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/sebp90/dooze-updates/releases/download/v1.13.47.0/dooze-Installer.dmg"
+                length="31049794"
+                type="application/octet-stream"
+                sparkle:edSignature="yKjvT4gree7AHYcS6BPVDmBg/MBVr1WTTWGoEeCHKtVUo6ZLLNvXkDUpDfara6k8cRYSUJC7b3hW+fzd44hWAg=="/>
+        </item>
+        <item>
             <title>1.9.7.1</title>
             <pubDate>Tue, 05 May 2026 18:20:00 +0000</pubDate>
             <sparkle:version>22</sparkle:version>
