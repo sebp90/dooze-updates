@@ -5,6 +5,25 @@
         <description>Most recent updates for Dooze</description>
         <language>en</language>
         <item>
+            <title>1.13.68.0</title>
+            <pubDate>Wed, 17 Jun 2026 23:36:52 +0000</pubDate>
+            <sparkle:version>36</sparkle:version>
+            <sparkle:shortVersionString>1.13.68.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>What's new in 1.13.68.0</h2>
+                <h3>Added</h3>
+                <ul>
+                <li><b>On-device memory extraction now actually runs for everyone — the Brain's Gemma E2B model auto-downloads in the background instead of silently never being fetched.</b> The Brain hardcodes E2B for every memory/extraction skill and no-ops silently if the model isn't on disk, but E2B was only downloaded when it happened to be the RAM-selected *chat* tier — i.e. only on &lt;16 GB Macs. On 16 GB+ Macs (the majority) the onboarding picker chose E4B/12B for chat, E2B was never fetched, and on-device memory extraction silently never ran. E2B now downloads from the same post-sign-in point that already auto-downloads Whisper (covering OAuth sign-in + onboarding completion), and re-triggers at the head of every Brain ingest as a demand-driven fallback for users whose download failed or never ran — idempotent, non-blocking, and additive to (not a replacement for) the user's chosen chat model. The download policy lives in <code>LocalModelService.triggerMemoryModelDownloadIfNeeded</code> (not in <code>AuthManager</code>): a pure <code>MemoryModelDownloadGate</code> truth table decides *whether* to fetch (only <code>.notDownloaded</code>/<code>.downloadError</code>), a <code>NetworkMonitor.isExpensive</code>/<code>isConstrained</code> gate defers the ~3.58 GB fetch off metered/hotspot links, and a 60 s failure backoff stops a relaunch/auth loop from re-thrashing. <b>Download serialization (correctness):</b> <code>LocalModelService.downloadModel</code> actually cold-loads the model into MLX/GPU (not just bytes), so it now runs at most one download at a time process-wide via a FIFO lane — E2B and the chat-tier model can no longer stack two concurrent GPU constructions during onboarding on a 16 GB Mac; queued models keep their real state (never overloaded as <code>.downloading</code>). <b>Stall watchdog:</b> a download that makes no byte progress for 120 s is cancelled and marked <code>.downloadError</code> so a hung transfer can't wedge the serial lane and block the chat model, with the gate retrying later. Privacy-safe Sentry breadcrumbs (<code>memory_model.download.{triggered,skipped,deferred}</code>, <code>model.download.{queued,stalled}</code>) make the funnel observable. Reviewed via <code>/autoplan</code> dual-voice (CEO + Eng, Claude + Codex) on the plan and <code>/review</code> on the diff (which added the queue-state-overload fix, the stall watchdog, the network-cost injection seam, and the backoff/skip coverage). 21 MLX-free unit tests across <code>MemoryModelDownloadGateTests</code>, <code>TriggerMemoryModelDownloadTests</code>, <code>LocalModelServiceDownloadQueueTests</code>, and <code>LocalModelServiceDownloadWatchdogTests</code>. Follow-ups (a true download-only backend path that doesn't cold-load GPU, a <code>preload</code>/idle-band mutex audit, tier-aware cloud-vs-local memory routing, and a user-visible memory-state surface) are filed P3 in <code>TODOS.md</code>. (<code>Sources/DoozeClient/Services/{LocalModelService,NetworkMonitor,MemoryModelDownloadGate}.swift</code>, <code>Sources/DoozeClient/Auth/AuthManager.swift</code>, <code>Sources/DoozeClient/Brain/Brain.swift</code>.)</li>
+                </ul>
+            ]]></description>
+            <enclosure
+                url="https://github.com/sebp90/dooze-updates/releases/download/v1.13.68.0/dooze-Installer.dmg"
+                length="31193434"
+                type="application/octet-stream"
+                sparkle:edSignature="Vdp4rHNYbpoeh/8pGoPmvjbbhjfuQyTJcFyIeYDdP3mLSkFPbqNTxuO2BNRw3rrWIR7SYxy3NfgzZpEGOCN7Cw=="/>
+        </item>
+        <item>
             <title>1.13.47.0</title>
             <pubDate>Tue, 16 Jun 2026 17:37:57 +0000</pubDate>
             <sparkle:version>35</sparkle:version>
