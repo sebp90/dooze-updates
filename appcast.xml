@@ -5,6 +5,25 @@
         <description>Most recent updates for Dooze</description>
         <language>en</language>
         <item>
+            <title>1.13.78.0</title>
+            <pubDate>Thu, 18 Jun 2026 21:27:59 +0000</pubDate>
+            <sparkle:version>37</sparkle:version>
+            <sparkle:shortVersionString>1.13.78.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>What's new in 1.13.78.0</h2>
+                <h3>Fixed</h3>
+                <ul>
+                <li><b><code>@</code>-mentioning a meeting in Ask AI now works with on-device (local) models, not just cloud.</b> Tagging a meeting with <code>@</code> and asking about it (e.g. "what were the action items?") silently returned nothing useful on a local Gemma model, while the same question worked on a cloud model — so the context looked "incompatible" with local. Root cause was simpler: it was never being served to the local model at all. Both paths resolve the same meeting block, but only the cloud request forwarded it; the local prompt builder (<code>ContextAssembler.assembleLocalMessages</code>) had no parameter for meeting context, so the text was dropped before it ever reached MLX. <b>Fix:</b> thread the resolved meeting block into the local system prompt (appended last, after memory + selected-text context). Two issues a dual-voice plan review caught and fixed in the same change: (1) <b>window overflow</b> — the meeting block can be ~4000 tokens and the local system prompt is never trimmed (only history is), so on the smallest shipped model (<code>phi-3.5-mini</code> @ 4096) an unclamped block would overflow the window and leave no room to generate; a new <code>clampMeetingBlock</code> truncates the block to fit (keeping the high-density header/summary/notes, trimming the transcript tail). Gemma E2B @ 8192 — the reported model — never overflowed; the clamp protects the smaller models the fix would otherwise have regressed. (2) <b>privacy parity</b> — the resolver was hardwired to the cloud-safe (attendee-name-redacted) transcript; local now uses the richer speaker-attributed <code>fullTranscriptText</code> via a new <code>TranscriptDestination</code> (<code>.cloud</code> default preserves the redaction contract + privacy sentinel tests; only local turns opt into <code>.local</code>), justified because local injection is on-device with no network egress and the transcript is already at rest. The model selection is captured once at submit so the destination decision and the inference path can't disagree (a cloud turn can never ship the un-redacted transcript). Routed through <code>/investigate</code> → <code>/autoplan</code> (CEO + Eng; Codex unavailable this run due to a <code>gpt-5.5</code> CLI fault, so Claude single-voice with independent subagents — which overturned the original "overflow is acceptable" call and added the clamp) → <code>/review</code> (adversarial pass; surfaced 3 narrow follow-ups, all filed to <code>TODOS.md</code>: multi-meeting drop + explicit-vs-memory priority on the 4096 model, and a pre-existing attendee-name header that egresses to cloud). Manually validated in-app: a local model now answers from <code>@</code>-tagged meeting content, and the cloud path is unchanged. Verified by 30 MLX-free tests (<code>PromptAssemblyTests</code> incl. present/absent/overflow-budget/three-block-ordering, <code>MeetingContextResolverTests</code> destination selection) plus the <code>CloudPrivacy*</code> and <code>PreSendSecretGate</code> sentinels staying green; build clean. (<code>Sources/DoozeClient/Context/ContextAssembler.swift</code>, <code>Sources/DoozeClient/Meeting/MeetingContextResolver.swift</code>, <code>Sources/DoozeClient/Components/AppContainer.swift</code>.)</li>
+                </ul>
+            ]]></description>
+            <enclosure
+                url="https://github.com/sebp90/dooze-updates/releases/download/v1.13.78.0/dooze-Installer.dmg"
+                length="31211741"
+                type="application/octet-stream"
+                sparkle:edSignature="y4QPvDvMA3aRuj2x0ARi3godBgtp4SDw/ZTI7R3pqlgVfH7/1BFJZUnh82vbpi2DZ0Z7bcYnslAtAqJIobS5CQ=="/>
+        </item>
+        <item>
             <title>1.13.68.0</title>
             <pubDate>Wed, 17 Jun 2026 23:36:52 +0000</pubDate>
             <sparkle:version>36</sparkle:version>
