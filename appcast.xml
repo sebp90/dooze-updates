@@ -5,6 +5,25 @@
         <description>Most recent updates for Dooze</description>
         <language>en</language>
         <item>
+            <title>1.13.80.0</title>
+            <pubDate>Sat, 20 Jun 2026 04:06:44 +0000</pubDate>
+            <sparkle:version>38</sparkle:version>
+            <sparkle:shortVersionString>1.13.80.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>What's new in 1.13.80.0</h2>
+                <h3>Fixed</h3>
+                <ul>
+                <li><b>The floating meeting-recorder panel now grows when you expand it, so the Stop / Pause / Bookmark controls stay reachable during a live recording.</b> A beta user on an older macOS still hit the 4×-regressed bug (#168 / #190 / #383): tapping the expand chevron grew the SwiftUI content to ~280pt but the <code>NSPanel</code> window stayed at its ~48pt compact height, so <code>NSHostingView</code> center-clipped the content — only the middle (streaming transcript) showed, with the control row clipped off-screen, leaving a live mic + system-audio capture with no in-panel way to stop it. <b>Root cause (on-device-confirmed via the new release <code>os.Logger</code> trace, macOS 26.3.2):</b> <code>hosting.sizingOptions = []</code> froze <code>NSHostingView.fittingSize</code> at the compact 48pt, so every <code>fittingSize</code>-based resize trigger (the #383 frame observer, plus an interim <code>layout()</code> driver) read 48 and never asked the window to grow; the only signal that had ever reported the true expanded height was a SwiftUI <code>GeometryReader</code> callback, which measured the window-constrained (compressed) size — full on newer macOS, 48 on the beta user's older OS, which is why it shipped "working" four times. <b>Fix:</b> drop <code>sizingOptions = []</code> so <code>fittingSize</code> computes correctly (matching the in-production <code>FirstMouseHostingView</code>, which runs the same config on macOS 26 without the #152/#190 <code>updateAnimatedWindowSize</code> crash — empirically reconfirmed no-crash on 26.3.2, the strictest crash environment); add <code>AutoSizingRecordingHostingView</code>, an <code>NSHostingView</code> subclass whose <code>layout()</code> drives the hosting frame to <code>fittingSize</code> via a deferred dispatch (crash-safe — never a synchronous <code>setFrameSize</code> in <code>layout()</code>) as the cross-OS resize trigger; the panel's frame observer now reads the clamped hosting frame instead of unclamped <code>fittingSize</code>; the transcript band is capped by the live screen height (<code>maxTranscriptHeight</code>, floor 160 / ceiling 400) so the expanded panel can't run off the bottom of a short display; a "Listening for speech…" empty state replaces the blank band; the Stop button surfaces the geometry-independent ⌘⇧R stop hint (the global hotkey stops a recording even if the panel ever mis-sizes); and a release-safe <code>os.Logger</code> trace (subsystem <code>app.dooze.client</code>, category <code>RecordingPanel</code>) logs the full resize chain so any recurrence on a beta machine is self-diagnosing with one <code>log stream</code>. Routed through <code>/autoplan</code> (CEO + Design + Eng dual-voice, Claude + Codex — which overturned the original "remove the callback, keep the observer" plan as a 5th-regression risk) → <code>/review</code> (Claude + Codex adversarial — Codex caught that removing <code>[]</code> re-exposed the crash path under the pulsing animation and that the observer re-read unclamped <code>fittingSize</code>; both fixed) → on-device verification on macOS 26.3.2 (the step all four prior fixes skipped): <code>fittingSize</code> 48→231 on expand, panel grows, controls visible, no crash. Verified by 20 MLX-free <code>RecordingPanel*</code> tests (geometry + <code>maxTranscriptHeight</code> cap + coalesce-gate lifecycle); <code>swift build</code> clean. Follow-ups filed P2/P3 in <code>TODOS.md</code>: re-add the graceful-degradation top-pin (keeping the hosting view as the contentView), recompute the transcript cap on <code>didChangeScreenParametersNotification</code>, and extract a shared <code>CoalescedPanelResizer</code> (now 5 hand-rolled copies). (<code>Sources/DoozeClient/Meeting/MeetingRecordingPanel.swift</code>, <code>Sources/DoozeClient/Meeting/MeetingRecordingPlayerView.swift</code>, <code>Tests/DoozeClientTests/Meeting/RecordingPanelGeometryTests.swift</code>.)</li>
+                </ul>
+            ]]></description>
+            <enclosure
+                url="https://github.com/sebp90/dooze-updates/releases/download/v1.13.80.0/dooze-Installer.dmg"
+                length="31221825"
+                type="application/octet-stream"
+                sparkle:edSignature="XW/ll3cjbCuZ8NJ1lU9/zJXJG88nIjw8ZLh0ZTp1EQgWA73IbUzbLJsHLA9bAy5pFpkkNv8P5WNpXI0vZSoaCQ=="/>
+        </item>
+        <item>
             <title>1.13.78.0</title>
             <pubDate>Thu, 18 Jun 2026 21:27:59 +0000</pubDate>
             <sparkle:version>37</sparkle:version>
