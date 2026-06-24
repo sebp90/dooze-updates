@@ -5,6 +5,30 @@
         <description>Most recent updates for Dooze</description>
         <language>en</language>
         <item>
+            <title>1.13.93.0</title>
+            <pubDate>Wed, 24 Jun 2026 19:39:52 +0000</pubDate>
+            <sparkle:version>39</sparkle:version>
+            <sparkle:shortVersionString>1.13.93.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>What's new in 1.13.93.0</h2>
+                <h3>Fixed</h3>
+                <ul>
+                <li><b>Redeemed cloud credit no longer vanishes — cloud models stay unlocked after redeem, refresh, and relaunch.</b> With subscription tiers removed, <code>cloudCreditCents</code> became the *sole* client-side gate for cloud models, which exposed three pre-existing credit-read bugs: a user who redeemed a code could get bounced back to local-only with an "out of credit" prompt because the client read <code>0</code>. Three fixes: (C1) <b>cold-start persistence</b> — <code>CachedAuthState</code> now stores <code>cloudCreditCents</code>, so credit (and cloud access) survives quit-and-relaunch instead of reading <code>0</code> until <code>/auth/me</code> returns; the cache decode tolerates an older blob that predates the field. (C2) <b>live self-heal</b> — the chat stream now reads the server's <code>remaining_credit_cents</code>; when the server reports the balance is empty mid-session, the client re-locks cloud and shows the "cloud credit empty, using local" banner immediately instead of lagging a poll. (C3) <b>stale-refresh guard</b> — a just-redeemed balance is protected for 60s against a stale, eventually-consistent <code>/auth/me</code> that would otherwise clobber it back to <code>0</code>; legitimate per-request decreases still flow through (the guard arms only on top-ups, applies on both the foreground and background refresh paths). (<code>Sources/DoozeClient/Auth/AuthManager.swift</code>, <code>Sources/DoozeClient/API/{DoozeAPIClient,DoozeAPIModels}.swift</code>, <code>Sources/DoozeClient/Auth/AuthProviding.swift</code>.)</li>
+                </ul>
+                <h3>Changed</h3>
+                <ul>
+                <li><b>Account state is now gated purely on credit, with a single "account suspended" ban — all other status gating is gone.</b> There are no paid tiers and waitlist was retired, so the client no longer gates anything on account <code>status</code>: the status monotonicity guard, the optimistic-status flip on redeem, and the dead <code>.waitlist</code> upgrade-prompt case are all removed. The one thing status still does is a hard ban: when the server returns a <code>403 account_suspended</code>, the chat panel shows a dedicated "Your account is suspended. Contact support…" message with no buy-credit or redeem call-to-action (credit can't lift a ban). A shared 403 recognizer maps the suspended response consistently across the chat, non-streaming, and TTS paths. (<code>Sources/DoozeClient/Components/{UpgradePromptView,AskAIView}.swift</code>, <code>Sources/DoozeClient/API/DoozeAPIClient.swift</code>.)</li>
+                <li>Tests: <code>CreditPersistenceTests</code> (cache round-trip + tolerant decode + the exact suspended-403 contract), <code>AuthManagerTests</code> (C3 stale-refresh race matrix), <code>DoozeAPIClientTests</code> (stream self-heal fires before the stream closes), <code>UpgradeLimitTypeTests</code> (suspended mapping/copy, waitlist retired). Pre-landing review (dual adversarial passes, both repos) + planning eng review (Claude + Codex) clean.</li>
+                </ul>
+            ]]></description>
+            <enclosure
+                url="https://github.com/sebp90/dooze-updates/releases/download/v1.13.93.0/dooze-Installer.dmg"
+                length="32475483"
+                type="application/octet-stream"
+                sparkle:edSignature="yYieiLEmrLTa4tNwhe9CLPBNl8DW3CyrUffHh558mlfDyW4uyAMSvK6Fe2JW2Er7cYOBcsNcQzgjSrxKC026CQ=="/>
+        </item>
+        <item>
             <title>1.13.80.0</title>
             <pubDate>Sat, 20 Jun 2026 04:06:44 +0000</pubDate>
             <sparkle:version>38</sparkle:version>
