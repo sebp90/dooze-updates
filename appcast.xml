@@ -5,6 +5,38 @@
         <description>Most recent updates for Dooze</description>
         <language>en</language>
         <item>
+            <title>1.13.102.0</title>
+            <pubDate>Mon, 29 Jun 2026 19:47:48 +0000</pubDate>
+            <sparkle:version>40</sparkle:version>
+            <sparkle:shortVersionString>1.13.102.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>What's new in dooze 1.13.102.0</h2>
+                <p>This update rolls up everything since 1.13.93.0.</p>
+                <h3>New</h3>
+                <ul>
+                <li><b>Calendar in the meeting recorder.</b> The New meeting panel now shows your next calendar meeting and lets you choose which calendars it watches. It reads your synced macOS calendars on-device — nothing leaves your Mac.</li>
+                <li><b>Higher-quality meeting video.</b> Screen recordings capture at your display's native resolution in HEVC, with a Quality picker (down to audio-only) so you can trade file size for fidelity.</li>
+                </ul>
+                <h3>Improved</h3>
+                <ul>
+                <li><b>Simpler chat panel.</b> A cleaner two-zone layout — window controls on top, and a pinned conversation line with a New chat button plus a Recent switcher below.</li>
+                <li><b>Lighter launcher.</b> The three filled pills are now lighter icon-and-label rows, with Settings reachable from a quiet gear in the header.</li>
+                </ul>
+                <h3>Fixed</h3>
+                <ul>
+                <li><b>Voice dictation no longer duplicates speech</b> or drops words at sentence boundaries.</li>
+                <li><b>Google sign-in</b> reliably surfaces its window and no longer collapses the panel mid-sign-in.</li>
+                <li><b>The launcher</b> no longer gets stuck in a clipped state.</li>
+                </ul>
+            ]]></description>
+            <enclosure
+                url="https://github.com/sebp90/dooze-updates/releases/download/v1.13.102.0/dooze-Installer.dmg"
+                length="32711865"
+                type="application/octet-stream"
+                sparkle:edSignature="uaqiHcD2zwHuQnTOPPToZoetnO0UbYG5fYZCNVTe5h3wCo40iNaShWxCV8uiVpiaU+ak1NwiPM1LAXQsmFS/Bg=="/>
+        </item>
+        <item>
             <title>1.13.93.0</title>
             <pubDate>Wed, 24 Jun 2026 19:39:52 +0000</pubDate>
             <sparkle:version>39</sparkle:version>
