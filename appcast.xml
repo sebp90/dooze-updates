@@ -5,6 +5,38 @@
         <description>Most recent updates for Dooze</description>
         <language>en</language>
         <item>
+            <title>1.13.127.0</title>
+            <pubDate>Mon, 06 Jul 2026 19:09:09 +0000</pubDate>
+            <sparkle:version>41</sparkle:version>
+            <sparkle:shortVersionString>1.13.127.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>What's new in dooze 1.13.127.0</h2>
+                <p>This update rolls up everything since 1.13.102.0.</p>
+                <h3>Fixed</h3>
+                <ul>
+                <li><b>Local transcription and memory no longer break with a "corrupted model" error.</b> On-device model storage moved out of the macOS-protected Documents folder, so a system update or app re-sign can no longer lock dooze out of its own Whisper and Gemma models. Existing models migrate automatically, and a stuck install now recovers and re-downloads instead of dead-ending on Retry.</li>
+                <li><b>You stay signed in across app updates.</b> Updating no longer occasionally signs you out.</li>
+                <li><b>Voice dictation is faster and cleaner.</b> Long dictation no longer slows down as you keep speaking, a seam that could drop or duplicate words at boundaries is fixed, and spurious mid-sentence periods before a conjunction are smoothed to commas.</li>
+                </ul>
+                <h3>New</h3>
+                <ul>
+                <li><b>Bring your own Claude agent into chat.</b> Run an agentic Claude session inside dooze with your own model and thinking-effort, image and tagged-meeting context, a plan picker, a follow-up queue, and session resume across app restarts.</li>
+                <li><b>Markup &amp; Capture.</b> Annotate what's on screen — boxes and comments — and send the marked-up capture as context, with multiple captures stacked.</li>
+                </ul>
+                <h3>Also</h3>
+                <ul>
+                <li>Read Aloud now shows and plays your downloaded Premium voices.</li>
+                <li>Chat panel polish: the composer no longer overflows the panel edge, and the conversation stops scrolling into empty whitespace.</li>
+                </ul>
+            ]]></description>
+            <enclosure
+                url="https://github.com/sebp90/dooze-updates/releases/download/v1.13.127.0/dooze-Installer.dmg"
+                length="34447586"
+                type="application/octet-stream"
+                sparkle:edSignature="+N8wYYl7sDYD6pMn4ByH/qfTUL549W7vQqR2kNfqvnZf8MYpP6Ae984t8p8OWlrpiM23XfC2YmHk0nCnWQdaDg=="/>
+        </item>
+        <item>
             <title>1.13.102.0</title>
             <pubDate>Mon, 29 Jun 2026 19:47:48 +0000</pubDate>
             <sparkle:version>40</sparkle:version>
