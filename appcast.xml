@@ -5,6 +5,25 @@
         <description>Most recent updates for Dooze</description>
         <language>en</language>
         <item>
+            <title>1.13.166.0</title>
+            <pubDate>Mon, 13 Jul 2026 19:16:42 +0000</pubDate>
+            <sparkle:version>47</sparkle:version>
+            <sparkle:shortVersionString>1.13.166.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>What's new in 1.13.166.0</h2>
+                <h3>Added</h3>
+                <ul>
+                <li><b>Your coding agent can now find and read your meetings when you ask it to.</b> If you use your own Claude subscription as a coding agent and say something like "look at my meeting with Eric," it can now search your recorded meetings by name, company, or topic. It matches titles, the people who were there, and what was actually said, so it finds the right meeting even when the name only comes up in the conversation itself, not the title. To read a meeting's full transcript it asks your permission first, with a simple "just this once / always / no" choice. You stay in control: a new setting under Privacy, Claude agent, lets you allow it every time, ask each time (the default), or never let the agent touch your meetings at all. Your meetings stay encrypted on your Mac, and nothing is shared until you say yes.</li>
+                </ul>
+            ]]></description>
+            <enclosure
+                url="https://github.com/sebp90/dooze-updates/releases/download/v1.13.166.0/dooze-Installer.dmg"
+                length="35614781"
+                type="application/octet-stream"
+                sparkle:edSignature="sfqeY0JEYne8I+ggqumo8AJ4kaRRLEea2Re68IXbannUeaWBKjIRBmtck8R8yYssmG+lGPKlwK3vB3eh1/UqBw=="/>
+        </item>
+        <item>
             <title>1.13.127.0</title>
             <pubDate>Mon, 06 Jul 2026 19:09:09 +0000</pubDate>
             <sparkle:version>41</sparkle:version>
