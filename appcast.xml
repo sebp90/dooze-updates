@@ -5,6 +5,29 @@
         <description>Most recent updates for Dooze</description>
         <language>en</language>
         <item>
+            <title>1.13.168.0</title>
+            <pubDate>Tue, 14 Jul 2026 20:31:22 +0000</pubDate>
+            <sparkle:version>48</sparkle:version>
+            <sparkle:shortVersionString>1.13.168.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h3>Fixed</h3>
+                <ul>
+                  <li><strong>Dooze no longer freezes while it checks your saved sign-in.</strong> Reading your session from the macOS Keychain used to happen on the main thread, so a briefly busy or locked Keychain could freeze the whole app for several seconds (the spinning beachball). That work now runs off the main thread, so it can't stall what you're doing.</li>
+                  <li><strong>Signing out now always takes, and you won't be quietly signed back in.</strong> When several things happened at once (right after launch, or just after you signed out), a background refresh could rarely undo your sign-out. Those races are closed: an explicit sign-out always wins.</li>
+                  <li><strong>No more flash of the sign-in screen when you open Dooze already signed in.</strong> A returning user goes straight to the app, and a brand-new user starts at sign-in instead of the wrong step.</li>
+                  <li><strong>Connecting your Claude subscription during onboarding no longer looks broken.</strong> Tapping "Connect" used to flicker and do nothing while Dooze quietly downloaded its Claude helper in the background. Now the row shows the download progressing ("Downloading Claude… 40%"), then a clear "Sign in" step, then "Connected" — both in onboarding and in the setup panel, and the download runs in the background so you can keep going.</li>
+                  <li><strong>Sign-in is recoverable when the browser tab gets lost.</strong> If the Claude sign-in tab ends up buried behind your other windows, tapping "Sign in" again opens a fresh one instead of leaving you stuck.</li>
+                  <li><strong>Setup failures now tell you what went wrong</strong> ("No internet connection", "Not enough disk space", "Couldn't start Claude") with a "Try again" button, instead of silently doing nothing.</li>
+                </ul>
+            ]]></description>
+            <enclosure
+                url="https://github.com/sebp90/dooze-updates/releases/download/v1.13.168.0/dooze-Installer.dmg"
+                length="35673014"
+                type="application/octet-stream"
+                sparkle:edSignature="79yqxj7YqP4SNewN5dhr0J3TbnlePh8QpxjBZvq1uvySakUmp8ag4m5T01w3qL1c5ytMHvzh7p8y0XhmWviWBA=="/>
+        </item>
+        <item>
             <title>1.13.166.0</title>
             <pubDate>Mon, 13 Jul 2026 19:16:42 +0000</pubDate>
             <sparkle:version>47</sparkle:version>
