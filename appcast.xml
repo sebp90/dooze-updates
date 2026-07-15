@@ -5,6 +5,31 @@
         <description>Most recent updates for Dooze</description>
         <language>en</language>
         <item>
+            <title>1.13.175.0</title>
+            <pubDate>Wed, 15 Jul 2026 21:37:10 +0000</pubDate>
+            <sparkle:version>50</sparkle:version>
+            <sparkle:shortVersionString>1.13.175.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>What's new in 1.13.175.0</h2>
+                <h3>Added</h3>
+                <ul>
+                  <li><strong>Meetings recorded without headphones now clean up their own echo.</strong> When you record a call on your Mac's built-in speakers, the other person's voice bleeds into your microphone, so the transcript used to double their words, label them as "You," and sometimes invent whole sentences during the stretches where you were just listening. After a meeting like that, Dooze now runs a quiet background pass that removes the echo and re-transcribes your side from the cleaned audio, so the transcript reads correctly. It only commits the result when it actually improved things (your original recording is kept untouched otherwise), the notes and memory are built from the clean version, and playback switches to the cleaned audio too. A small "Cleaning up audio…" note shows while it works, with a "Clean up audio" button to re-run it. Everything happens on your Mac.</li>
+                  <li><strong>Files your coding agent makes now show up as chips you can open.</strong> When you use your own Claude subscription as a coding agent and it writes a file (a report, an HTML page, a spreadsheet), that file now appears right in the chat as a clickable chip instead of a raw path you have to hunt down in Finder. Click the chip to open it in your default app, or use the small button next to it to reveal it in Finder. The chips stick around, so you can scroll back to an older message and reopen whatever the agent made. For safety, files that could run code show a "Show in Finder" action instead of opening directly, build and dependency clutter is filtered out, and everything stays inside that chat's own folder on your Mac.</li>
+                </ul>
+                <h3>Fixed</h3>
+                <ul>
+                  <li><strong>Meeting recording no longer crashes when a recording stops or fails to start.</strong> A timing bug could crash Dooze while it was closing out a recording's audio or video file, most often the moment you pressed Stop or right when a recording couldn't start (for example when the disk was nearly full). Both the microphone-audio and screen-recording paths are fixed, so recordings finish cleanly instead of taking the app down. Paused stretches of a recording are still saved as silence so the audio stays lined up with the video, and that silence is now tracked accurately even if a recording ends mid-pause.</li>
+                  <li><strong>The chat panel no longer jumps to full height on your first message.</strong> When you sent the first message in a fresh chat, the panel briefly ballooned to nearly the full screen (pushing the "dooze" header off the top, with a big empty gap under "Thinking…"), then snapped back down to fit once the reply arrived. The panel now grows from the composer up to the reply's real height, with no overshoot.</li>
+                </ul>
+            ]]></description>
+            <enclosure
+                url="https://github.com/sebp90/dooze-updates/releases/download/v1.13.175.0/dooze-Installer.dmg"
+                length="36319601"
+                type="application/octet-stream"
+                sparkle:edSignature="rxRJZtGJLDPDg0Ft1JQE9r32Eane+9ObSpbUQbJu62TJb9hYEIbnNPX5ueDkfiK1cX/sYNVbOzidaK17pUAcCA=="/>
+        </item>
+        <item>
             <title>1.13.171.0</title>
             <pubDate>Wed, 15 Jul 2026 02:19:07 +0000</pubDate>
             <sparkle:version>49</sparkle:version>
