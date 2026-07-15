@@ -5,6 +5,31 @@
         <description>Most recent updates for Dooze</description>
         <language>en</language>
         <item>
+            <title>1.13.171.0</title>
+            <pubDate>Wed, 15 Jul 2026 02:19:07 +0000</pubDate>
+            <sparkle:version>49</sparkle:version>
+            <sparkle:shortVersionString>1.13.171.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h3>Fixed</h3>
+                <ul>
+                  <li><strong>Dooze no longer freezes for a few seconds when it starts up.</strong> Two things at launch were running on the main thread and could stall the whole app (the spinning beachball) for 5 seconds or more: checking whether Dooze opens at login, and rebuilding the search index for your memory. The login check now runs in the background, and the memory index only rebuilds when it's actually missing or out of date — off the main thread when it does. Launch is snappy again, even with a large memory vault.</li>
+                  <li><strong>Connecting your Claude subscription now works even if you don't already have Claude installed.</strong> Some people saw "Couldn't verify the download" with no way past it. Dooze downloaded its Claude helper but checked it before making it runnable, so the check always failed for anyone who didn't already have Claude on their Mac. Now the download completes and connects.</li>
+                  <li><strong>Clearer, correct setup messages.</strong> Running low on disk space now says "Not enough disk space" (it could previously show "No internet connection" by mistake), and Dooze checks there is room before starting the ~220 MB download instead of failing partway through.</li>
+                  <li><strong>Flaky connections recover on their own.</strong> A dropped connection during the download retries a few times instead of failing on the first hiccup, and cancelling now actually stops the download instead of letting it finish in the background.</li>
+                </ul>
+                <h3>Changed</h3>
+                <ul>
+                  <li><strong>The welcome message in chat after setup is refreshed.</strong> It now walks through the core loop — record your meetings, mark up your screen, and hand all of it to your agents as context (including bringing an agent into a meeting to work with you live) — plus the two hotkeys for dictating into any app or talking to Dooze, and a link to grab 20 minutes with the team.</li>
+                </ul>
+            ]]></description>
+            <enclosure
+                url="https://github.com/sebp90/dooze-updates/releases/download/v1.13.171.0/dooze-Installer.dmg"
+                length="35689514"
+                type="application/octet-stream"
+                sparkle:edSignature="fyNJ8H1c4oyCFdbxp9DGMlv09L8qGUzntWZkKykqS80QYMUWeD47QgstaKJxyr6NHPPfQLU5xKmwqynlyo4aCg=="/>
+        </item>
+        <item>
             <title>1.13.168.0</title>
             <pubDate>Tue, 14 Jul 2026 20:31:22 +0000</pubDate>
             <sparkle:version>48</sparkle:version>
