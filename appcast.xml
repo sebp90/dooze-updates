@@ -5,6 +5,45 @@
         <description>Most recent updates for Dooze</description>
         <language>en</language>
         <item>
+            <title>1.13.194.0</title>
+            <pubDate>Fri, 17 Jul 2026 19:27:34 +0000</pubDate>
+            <sparkle:version>51</sparkle:version>
+            <sparkle:shortVersionString>1.13.194.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>What's new in 1.13.194.0</h2>
+
+                <h3>New</h3>
+                <ul>
+                <li><b>Live meeting notes.</b> Jot quick thoughts during a call and hit Return to save them, stamped to that moment. After the call the Notes tab becomes one editable page — a short summary on top, then your notes. Didn't take any? Dooze fills the page with on-device notes for free. An Enhance button adds decisions, action items and follow-ups without touching your words.</li>
+                <li><b>Bring your own OpenAI Codex agent (early opt-in).</b> Run your own <code>codex</code> as a coding agent inside Dooze, alongside the Claude one — on your own ChatGPT subscription, sandboxed to the chat's folder with an approval card for every command. Dooze can now install Codex for you (one-tap, signed build), it can ask you clarifying questions, search and read your meetings, and pick GPT-5.6 Sol / Terra / Luna. A sandbox self-test and a runaway time limit keep each turn fenced in.</li>
+                <li><b>Your own Claude skills and settings work inside the BYO agent.</b> When you chat with your own Claude, it loads your personal setup — custom skills and slash commands come along instead of starting blank. Your meetings, transcripts and memory still never leave your Mac, and Dooze's approval card and sandbox still apply.</li>
+                </ul>
+
+                <h3>Changed</h3>
+                <ul>
+                <li><b>"Functions" are now "Skills", with a cleaner <code>/</code> menu and editor.</b> Slash commands (Polish, Summarize, your own saved prompts) are Skills everywhere now. The <code>/</code> menu is redesigned to match the app — grouped by source, each row showing its name over its <code>/command</code>, with an "Add new skill" row and a new Description field. Existing custom skills carry over unchanged.</li>
+                <li><b>Cleaner agent question cards and a neutral Screenshot button.</b> Multiple-choice questions from an agent use a clean list with inline "Other", and the per-message Screenshot toggle is now a plain neutral button instead of a coral one that read like a warning.</li>
+                <li><b>Markup &amp; Capture describes itself more precisely.</b> The text shipped with a marked-up screenshot now includes the image size, and arrows and pen strokes carry a label for what they point at, so an agent places every coordinate without needing vision.</li>
+                <li><b>The meeting recorder's next-meeting card is lighter.</b> A clean outlined box instead of a filled tan block, with the whole "Add or edit calendars" area clickable.</li>
+                </ul>
+
+                <h3>Fixed</h3>
+                <ul>
+                <li><b>Voice dictation is more reliable.</b> Dictating into the Ask AI chat now works every time (not just the first), no longer re-attaches context you already cleared, and no longer restarts music you had paused.</li>
+                <li><b>"Open in Chat" on a meeting starts a fresh conversation</b> instead of dropping the transcript into whatever unrelated chat was already open.</li>
+                <li><b>Calendar and screen-recording prompts appear correctly.</b> "Connect your calendar" now opens the real permission prompt, first-run screen access shows the macOS dialog, and Record no longer re-pops the screen-recording dialog every time.</li>
+                <li><b>No more launch freezes.</b> Permission checks and memory-index rebuilds that ran on the main thread at start-up — and a main-thread hang while connecting the Claude/Codex agent — are moved off the launch path, so the window stays responsive.</li>
+                <li><b>Arrow keys + Enter pick the right skill in the <code>/</code> menu.</b> The highlighted row and the selected item now share one list, so the row you see is the one that runs.</li>
+                </ul>
+            ]]></description>
+            <enclosure
+                url="https://github.com/sebp90/dooze-updates/releases/download/v1.13.194.0/dooze-Installer.dmg"
+                length="36776602"
+                type="application/octet-stream"
+                sparkle:edSignature="FhKKvv4pFM/XQvnMFPRx0gUwo69/1bOBBSwAJY6ELE+J+DT0lp7QKuPFIZzFmJKfkGqoA1GZT1xaeQSmySGBDg=="/>
+        </item>
+        <item>
             <title>1.13.175.0</title>
             <pubDate>Wed, 15 Jul 2026 21:37:10 +0000</pubDate>
             <sparkle:version>50</sparkle:version>
