@@ -5,6 +5,28 @@
         <description>Most recent updates for Dooze</description>
         <language>en</language>
         <item>
+            <title>1.13.211.0</title>
+            <pubDate>Wed, 22 Jul 2026 18:34:23 +0000</pubDate>
+            <sparkle:version>52</sparkle:version>
+            <sparkle:shortVersionString>1.13.211.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>What's new in 1.13.211.0</h2>
+                <h3>Added</h3>
+                <ul>
+                <li><b>The chat now opens with helpful suggestions instead of a blank box.</b> When you open a fresh chat, Dooze shows a couple of things worth doing right now (ask about what you're looking at, ask about a recent meeting, mark up your screen, record a meeting) plus a short "Build with Dooze" list (a website, a deck, a doc, and more). The suggestions adapt to you: they reflect what you've used, what app you're in, and your meetings, and they rotate so they stay fresh.</li>
+                <li><b>"Ask about the doc you're working on."</b> When a supported app or website is in front of you (a Google Doc, Slides, Sheets, Figma, Notion, Gmail, and more), the suggestion names it, and clicking it captures your screen and answers about exactly what you're looking at. On a browser it reads the active tab through the extension (URL only, no page contents).</li>
+                <li><b>Guided "Build with Dooze" intakes.</b> Clicking a build suggestion (deck, doc, spreadsheet, website, app, and more) opens with a short, clear brief of what to give Dooze to get started, including which output format you want (HTML, PowerPoint, Google Slides, Word, Markdown, PDF, Excel, CSV, and so on).</li>
+                </ul>
+                <p>The whole surface can be turned off with <code>defaults write app.dooze.client chatEmptyStateEnabled -bool false</code>.</p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/sebp90/dooze-updates/releases/download/v1.13.211.0/dooze-Installer.dmg"
+                length="37092737"
+                type="application/octet-stream"
+                sparkle:edSignature="u2elz1c6r5g7XH8WHACRpT2FcC0l4qfhgWfLyWEN+XZfZ8o/mVlFAd+CrErcqoELPRUSC7vIHkuHhJWmJUeLBg=="/>
+        </item>
+        <item>
             <title>1.13.194.0</title>
             <pubDate>Fri, 17 Jul 2026 19:27:34 +0000</pubDate>
             <sparkle:version>51</sparkle:version>
