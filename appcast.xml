@@ -11,15 +11,15 @@
             <sparkle:shortVersionString>1.13.222.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <description><![CDATA[
-                <h2>What's new in 1.13.222.0</h2>
-                <h3>Added</h3>
-                <ul>
-                <li><b>Point your Claude agent at a meeting while it's still happening.</b> In the chat panel, type <code>@</code> and pick the meeting that's recording (it now shows a coral "recording now" tag and reads "Live meeting" so you can't confuse it with a finished one). That links the live meeting to the chat: a coral "Live meeting" pill appears in the composer, and everything said in the meeting rides along with each message you send, so you can ask the agent to build or edit a doc from the conversation as it unfolds and keep steering it with follow-ups. Remove the pill to disconnect. BYO-only (uses your own Claude), so the live transcript stays on your machine. (<code>Meeting/LiveMeetingAgentCoordinator.swift</code>, <code>Meeting/MeetingMentionPicker.swift</code>, <code>Components/AskAIView.swift</code>, <code>Components/AppContainer.swift</code>.)</li>
-                </ul>
-                <h3>Changed</h3>
-                <ul>
-                <li><b>The agent stops fighting its own sandbox, so it wastes fewer turns and gets to the deliverable faster.</b> It now knows up front that it can't run a local web server (so it writes a self-contained file you open directly instead of trying to start one and failing), and how to make a PDF without the tools the sandbox blocks (it hands back the HTML and tells you to Print to PDF). Developer tools you installed (bun, Homebrew, cargo, and friends) now resolve for the agent's commands, so skills that depend on them just work. And an HTML page the agent builds now opens in your browser in one click from its file chip, instead of only revealing in Finder. (<code>Agent/AgentSystemPrompt.swift</code>, <code>Agent/AgentEnvironment.swift</code>, <code>Agent/AgentArtifactScanner.swift</code>, <code>Agent/AgentSessionManager.swift</code>, <code>Agent/AgentArtifactChip.swift</code>.)</li>
-                </ul>
+<h2>What's new in 1.13.222.0</h2>
+<h3>Added</h3>
+<ul>
+<li><b>Point your Claude agent at a meeting while it's still happening.</b> In the chat panel, type <code>@</code> and pick the meeting that's recording (it now shows a coral "recording now" tag and reads "Live meeting" so you can't confuse it with a finished one). That links the live meeting to the chat: a coral "Live meeting" pill appears in the composer, and everything said in the meeting rides along with each message you send, so you can ask the agent to build or edit a doc from the conversation as it unfolds and keep steering it with follow-ups. Remove the pill to disconnect. BYO-only (uses your own Claude), so the live transcript stays on your machine.</li>
+</ul>
+<h3>Changed</h3>
+<ul>
+<li><b>The agent stops fighting its own sandbox, so it wastes fewer turns and gets to the deliverable faster.</b> It now knows up front that it can't run a local web server (so it writes a self-contained file you open directly instead of trying to start one and failing), and how to make a PDF without the tools the sandbox blocks (it hands back the HTML and tells you to Print to PDF). Developer tools you installed (bun, Homebrew, cargo, and friends) now resolve for the agent's commands, so skills that depend on them just work. And an HTML page the agent builds now opens in your browser in one click from its file chip, instead of only revealing in Finder.</li>
+</ul>
             ]]></description>
             <enclosure
                 url="https://github.com/sebp90/dooze-updates/releases/download/v1.13.222.0/dooze-Installer.dmg"
