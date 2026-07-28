@@ -11,16 +11,13 @@
             <sparkle:shortVersionString>1.13.229.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <description><![CDATA[
-                <h2>What's new in 1.13.229.0</h2>
-                <h3>Fixed</h3>
-                <ul>
-                <li><b>On 16 GB Macs, Dooze no longer wastes memory in the background while you're away, which was killing things like a meeting you were watching.</b> When your screen slept, Dooze's on-device memory worker would load its ~3-4 GB local model on every idle wake even when it had nothing to do (a backlog of permanently-failed items counts as "nothing to do"), pinning a 16 GB Mac to near-zero free memory. That pressure could get Dooze killed by the OS mid-task, including closing a recorded meeting you had open in full screen. Now the idle worker skips loading the model entirely when there's no pending work. Reversible with <code>defaults write app.dooze.client idleSkipEmptyLoadEnabled -bool false</code>.</li>
-                <li><b>Background memory work no longer permanently gives up on an item just because you opened the chat panel a few times.</b> Opening chat pauses ("yields") the background worker, and three of those pauses plus one real hiccup could permanently drop an item. A pause is no longer counted against an item's retry budget.</li>
-                </ul>
-                <h3>Added</h3>
-                <ul>
-                <li><b>Better diagnostics for two silent reliability problems.</b> Dooze now reports why a background memory item was permanently dropped (previously only a count was visible), and detects when a prior session ended abnormally (an OS memory kill leaves no crash report), carrying the app's last memory footprint so we can tell an out-of-memory kill from an ordinary crash. Internal telemetry only, no user-facing surface.</li>
-                </ul>
+<h2>What's new in 1.13.229.0</h2>
+<h3>Improved</h3>
+<ul>
+<li><b>Lower background memory use, especially on 16 GB Macs.</b> Dooze now uses noticeably less memory while you're away, so it stays fast and stable through long sessions and recorded meetings.</li>
+<li><b>More dependable background processing.</b> Your memory items are handled more reliably, even while you're actively using chat.</li>
+<li><b>Behind-the-scenes reliability and diagnostics improvements.</b></li>
+</ul>
             ]]></description>
             <enclosure
                 url="https://github.com/sebp90/dooze-updates/releases/download/v1.13.229.0/dooze-Installer.dmg"
