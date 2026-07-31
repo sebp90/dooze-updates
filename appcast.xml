@@ -5,6 +5,37 @@
         <description>Most recent updates for Dooze</description>
         <language>en</language>
         <item>
+            <title>1.13.237.0</title>
+            <pubDate>Fri, 31 Jul 2026 19:49:41 +0000</pubDate>
+            <sparkle:version>55</sparkle:version>
+            <sparkle:shortVersionString>1.13.237.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>What's new in 1.13.237.0</h2>
+                <h3>Added</h3>
+                <ul>
+                <li><b>Pick exactly what you save when you download a meeting.</b> The download button now opens a checklist — transcript, audio, video, any combination. One item saves as a single file to your Downloads folder; two or more go into a folder. Files are named after the meeting and when it happened, so your recordings sort by meeting date and re-downloading keeps the same name.</li>
+                <li><b>Recover missed speech on a finished meeting.</b> On calls where the other person comes through quietly, parts of their side could be missing from the transcript. Dooze now re-scans the saved audio after a meeting ends and fills those gaps in — automatically at stop, or on demand from the "Recover missed speech" button. Recovered lines flow into the summary and notes too, and your bookmarks and edits are preserved.</li>
+                </ul>
+                <h3>Improved</h3>
+                <ul>
+                <li><b>Bookmarks, notes, and transcript lines stay lined up with playback.</b> Recorded audio now tracks real time exactly, so a bookmark you drop at 11:45 lands at 11:45 — through the whole call, not just the opening minutes.</li>
+                <li><b>Both sides of a meeting sound even.</b> Your microphone and the other person's audio are leveled toward a shared loudness during playback and export, so neither voice drowns out the other. The original recordings on disk are never modified.</li>
+                <li><b>Names and product terms transcribe more accurately.</b> Every speech decode now hints the recognizer with a small product vocabulary. Ordinary words are unaffected.</li>
+                <li><b>In-person meetings recorded on the built-in speakers keep more of the conversation.</b> When both people talk at once without headphones, Dooze makes a second pass after the meeting and keeps the result only when it recovers more speech.</li>
+                <li><b>Screenshot context works from the first message.</b> With screenshot capture on, the first message after launch now includes your screen, and asking "what's on my screen?" gets a direct answer. The screenshot sits behind a small chevron so your question stays the focus of the bubble.</li>
+                <li><b>Less strain on 16 GB Macs during meetings.</b> Background memory work now stands down while a meeting or voice dictation is running and picks back up once you're done, so local models don't compete for memory mid-transcription.</li>
+                <li><b>The voice mini-player's Recent list opens cleanly.</b> The panel grows to fit your recent transcriptions and read-aloud history, scrolls when the list is long, and shrinks back when you collapse it.</li>
+                <li><b>Behind-the-scenes reliability and diagnostics improvements.</b></li>
+                </ul>
+            ]]></description>
+            <enclosure
+                url="https://github.com/sebp90/dooze-updates/releases/download/v1.13.237.0/dooze-Installer.dmg"
+                length="37687911"
+                type="application/octet-stream"
+                sparkle:edSignature="LSwnmp9UmgSpo2BubJftsaJ4Tw7wIo73CgCClpfzAxvUw89W3h8vrJKzwmGrl7vznTbQeyeDFxvLtGpLoloLDg=="/>
+        </item>
+        <item>
             <title>1.13.229.0</title>
             <pubDate>Tue, 28 Jul 2026 05:08:01 +0000</pubDate>
             <sparkle:version>54</sparkle:version>
