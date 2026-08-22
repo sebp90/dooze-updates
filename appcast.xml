@@ -5,6 +5,48 @@
         <description>Most recent updates for Dooze</description>
         <language>en</language>
         <item>
+            <title>1.13.263.0</title>
+            <pubDate>Sat, 22 Aug 2026 02:24:58 +0000</pubDate>
+            <sparkle:version>56</sparkle:version>
+            <sparkle:shortVersionString>1.13.263.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>What's new in 1.13.263.0</h2>
+
+                <h3>Meetings</h3>
+                <ul>
+                <li><b>Your own voice is now recorded during calls</b> — on a WhatsApp, Zoom, or Google Meet call over the built-in speakers, your microphone is captured at a normal level, so you are audible on playback and present in the transcript.</li>
+                <li><b>Your mic stays in sync with the video when you take a call mid-meeting</b>, so everything spoken after the call stays lined up with the picture.</li>
+                <li><b>Meeting playback keeps picture and sound together</b>, and pausing a meeting now pauses the screen recording too.</li>
+                <li><b>Enhance writes into your notes instead of below them</b> — the meeting's context, decisions, and details fill in underneath each note you jot and each moment you bookmark, with a new split button to run it privately on this Mac.</li>
+                <li><b>The meeting prompt asks once per call</b>, stays quiet until a call genuinely ends, and pauses for a day if you keep dismissing it.</li>
+                <li><b>Recordings made before this release show a dismissible sync note</b> if their audio drifted from their video.</li>
+                </ul>
+
+                <h3>Chat and agents</h3>
+                <ul>
+                <li><b>Copy now pastes clean, formatted text</b> that takes on the formatting of wherever you drop it, with no stray markdown characters.</li>
+                <li><b>You can attach files with a "+" button</b> in the floating composer, and dropping several images at once adds all of them.</li>
+                <li><b>Your-subscription agents reconnect on their own</b> — when a Claude or Codex login goes stale, dooze shows a Reconnect banner and keeps your prompt so one tap re-sends it.</li>
+                <li><b>Your-subscription models stay selectable when signed out</b>, and never quietly downgrade to a different model.</li>
+                <li><b>The Codex agent works in your folder without asking at every step</b>, while anything reaching outside the folder or reading a sensitive file still asks first.</li>
+                </ul>
+
+                <h3>Reliability</h3>
+                <ul>
+                <li><b>Voice dictation starts cleanly when the microphone is busy</b>, including while you are on a call in another app.</li>
+                <li><b>Steadier on 16 GB Macs</b> — the on-device model and background organizing now work within limits that leave room for the rest of your Mac, and nothing you captured is lost.</li>
+                <li><b>You stay signed in across cold launches</b>, even when the keychain is briefly unavailable at startup.</li>
+                <li><b>Read Aloud only follows links that stay on the public web</b>, re-checking every redirect.</li>
+                </ul>
+            ]]></description>
+            <enclosure
+                url="https://github.com/sebp90/dooze-updates/releases/download/v1.13.263.0/dooze-Installer.dmg"
+                length="38010040"
+                type="application/octet-stream"
+                sparkle:edSignature="+2iHRLPxXp2uK+dSelX5I07NKtSoxc5JBPfgMcTy1QP9eq2bwBH5k3Rh8V3C4Bt24SIV9yDX2TbF34cliuS7Bw=="/>
+        </item>
+        <item>
             <title>1.13.237.0</title>
             <pubDate>Fri, 31 Jul 2026 19:49:41 +0000</pubDate>
             <sparkle:version>55</sparkle:version>
