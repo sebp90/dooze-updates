@@ -5,6 +5,60 @@
         <description>Most recent updates for Dooze</description>
         <language>en</language>
         <item>
+            <title>1.14.6.0</title>
+            <pubDate>Fri, 04 Sep 2026 04:32:35 +0000</pubDate>
+            <sparkle:version>59</sparkle:version>
+            <sparkle:shortVersionString>1.14.6.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                # dooze 1.14
+
+                Meeting notes are one readable document now, and every chat remembers the model you started it on.
+
+                ## Notes read like a document
+
+                The summary is a `## Summary` section at the top of the note, and your own writing sits under
+                `## Notes` beneath it. Both are ordinary text you can edit or delete.
+
+                Enhanced notes come back as `## Decisions`, `## Action items` and `## Follow-ups` with real bullets,
+                instead of a wall of same-size lines.
+
+                Dooze also knows when you wrote each note. A line you typed before the meeting, during it, or after
+                it is treated differently — an agenda item gets checked against what was actually said, a live jot
+                gets enriched, and an after-the-fact conclusion is left as yours.
+
+                The on-device summary lands the moment you stop recording, and Enhance swaps in the fuller version
+                in place when you ask for it.
+
+                ## Every chat keeps its model
+
+                Opening an old conversation no longer switches your other chats to whatever model it was using. Each
+                chat remembers the model, thinking effort and plan mode you gave it, and a follow-up runs on the
+                model you started with. The picker at the bottom is the default for your next new chat.
+
+                Moving an existing chat between Claude and ChatGPT is deliberate, and tells you first that its
+                history will be sent to the other provider.
+
+                ## Fixes
+
+                **You should stop getting logged out.** A flaky keychain read on the token-refresh path could sign
+                you out roughly once a week and send you back through Google, even though your session was still
+                valid the whole time. Dooze now trusts the rest of the session instead of the one bad read.
+
+                Pasting a large file to your own Claude or ChatGPT agent no longer fails partway through writing it.
+
+                Claude model names in the picker now match what they actually run. Agent notices render on their own
+                line instead of running into the start of a reply.
+
+                Questions or something broken? Email howdy@dooze.app.
+            ]]></description>
+            <enclosure
+                url="https://github.com/sebp90/dooze-updates/releases/download/v1.14.6.0/dooze-Installer.dmg"
+                length="39965458"
+                type="application/octet-stream"
+                sparkle:edSignature="fyUzXkooeUqTefoJbBs8D1KvsN21N5repSE6lCNhCrCtsDzQVfJuq1tNeO3Pe22LcTbocycjtAsK6nExeItRBA=="/>
+        </item>
+        <item>
             <title>1.13.263.0</title>
             <pubDate>Sat, 22 Aug 2026 02:24:58 +0000</pubDate>
             <sparkle:version>56</sparkle:version>
