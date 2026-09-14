@@ -5,6 +5,54 @@
         <description>Most recent updates for Dooze</description>
         <language>en</language>
         <item>
+            <title>1.15.0.0</title>
+            <pubDate>Mon, 14 Sep 2026 21:40:28 +0000</pubDate>
+            <sparkle:version>62</sparkle:version>
+            <sparkle:shortVersionString>1.15.0.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>What's new in 1.15.0.0</h2>
+
+                <p>Point Dooze at a real repo and let your own Claude or ChatGPT agent build in it, with a pull request at the end.</p>
+
+                <h3>Build from a real repo</h3>
+                <ul>
+                <li><b>Connect a git repo to a chat.</b> Paste a git URL or browse to a local folder — it attaches instantly through a git worktree, with no multi-gigabyte copy. Pick from Recent, or choose a branch to start from, including another running chat's branch when you want to stack work on it.</li>
+                <li><b>Setup happens while you type.</b> The chat opens with a status line that resolves in the background as prereqs are copied and the install runs. It never blocks you.</li>
+                <li><b>A real pull request at the end.</b> When the changes are ready, open a PR with a written description, see its number and open/merged status on a GitHub strip, and merge it without leaving Dooze. Reopen the chat later and it reflects the real state on GitHub.</li>
+                <li><b>Click any changed file to see the redline</b> — a red/green diff in the canvas rather than a wall of source.</li>
+                <li><b>Disconnecting archives, it never destroys.</b> Reconnect the same repo to the same chat and your branch and changes come back.</li>
+                </ul>
+
+                <h3>Agents</h3>
+                <ul>
+                <li><b>Watch the agent think.</b> Claude and ChatGPT now stream their reasoning and progress as they work, so a long task shows what it is doing instead of sitting silent.</li>
+                <li><b>Your own skills in the picker.</b> Type <code>/</code> and your installed agent skills are there alongside Dooze's, routed to whichever agent you are using.</li>
+                <li><b>Read-only commands stop interrupting you.</b> Grep, cat and find auto-approve on a repo you have trusted. Anything destructive still asks.</li>
+                <li>New models available: GPT-6 Astra and Fable 5.1.</li>
+                </ul>
+
+                <h3>Meetings and notes</h3>
+                <ul>
+                <li><b>Drop in an audio file and get a transcript.</b> Paste or pick a recording and Dooze transcribes it on device, then links it as a meeting you can ask about.</li>
+                </ul>
+
+                <h3>Fixes</h3>
+                <ul>
+                <li><b>You should stop getting logged out.</b> More of the ways a flaky keychain read could end your session are now handled, so a valid session stays signed in.</li>
+                <li>The repo picker connects on one click, the connected-repo row no longer jitters on hover, and Disconnect actually disconnects.</li>
+                <li>Fixed a crash when closing the notes editor, and a crash when pasting certain clipboard content.</li>
+                </ul>
+
+                <p>Questions or something broken? Email <a href="mailto:howdy@dooze.app">howdy@dooze.app</a>.</p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/sebp90/dooze-updates/releases/download/v1.15.0.0/dooze-Installer.dmg"
+                length="37808662"
+                type="application/octet-stream"
+                sparkle:edSignature="FdYvJSyzMzEegCZo1tTzk9GBmYm1cnQtvz8PaJzlD38YtWoM5bDNgguAonsPaK1Rh1q6e7BN9pGU6awO+Zr6DQ=="/>
+        </item>
+        <item>
             <title>1.14.6.0</title>
             <pubDate>Fri, 04 Sep 2026 04:32:35 +0000</pubDate>
             <sparkle:version>59</sparkle:version>
