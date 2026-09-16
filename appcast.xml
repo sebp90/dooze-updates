@@ -5,6 +5,63 @@
         <description>Most recent updates for Dooze</description>
         <language>en</language>
         <item>
+            <title>1.19.1.0</title>
+            <pubDate>Wed, 16 Sep 2026 18:30:27 +0000</pubDate>
+            <sparkle:version>63</sparkle:version>
+            <sparkle:shortVersionString>1.19.1.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>What's new in 1.19.1.0</h2>
+
+                <p>The agent can now see the site it is building, settings moved into the full-screen app, and the pull-request flow got a permanent home.</p>
+
+                <h3>Web work you can watch</h3>
+                <ul>
+                <li><b>Live preview in the chat.</b> When the agent edits a site in a connected repo, the running page appears next to the conversation and refreshes as it works.</li>
+                <li><b>Point at the page and say what to change.</b> Mark up the live preview the same way you mark up a screenshot, and the agent picks up your notes.</li>
+                <li><b>The agent can see its own work.</b> It can screenshot the running site and read the console, so it catches a broken layout without you describing it.</li>
+                <li><b>Ask it to share what it built</b> and it publishes a page or deck and hands back a link.</li>
+                </ul>
+
+                <h3>Pull requests</h3>
+                <ul>
+                <li><b>A permanent Create PR control</b> under the composer in a repo-bound chat, instead of a card that reappeared after every turn.</li>
+                <li><b>It picks up a PR the agent opened itself</b>, so the status stays right either way.</li>
+                <li><b>Clicking a changed file opens it</b>, including single files thousands of lines long.</li>
+                <li>Reopening an old conversation lands at the bottom, with the latest turn and the PR status in view.</li>
+                </ul>
+
+                <h3>Settings moved in</h3>
+                <ul>
+                <li><b>Settings now live inside the full-screen app</b> rather than a separate window. Cmd+, opens it and jumps to the right section.</li>
+                <li><b>A setup checklist</b> for permissions, models, the browser extension, agents, calendar and voice, showing real status rather than a list of toggles.</li>
+                <li><b>Change or remove your models</b> — transcription and on-device — with download progress you can cancel.</li>
+                <li><b>Storage cleanup with real space estimates</b>, including dropping videos older than 30 days while keeping the audio and transcript.</li>
+                </ul>
+
+                <h3>Chat</h3>
+                <ul>
+                <li><b>Tool steps show above the reply</b>, so you see what the agent is doing before the answer arrives.</li>
+                <li><b>"In this chat" groups by what each thing is</b> — things you can open, files changed, sources used.</li>
+                <li><b>Artifact cards stay where they were made</b>, so reopening an old chat puts each document back in its place.</li>
+                <li>A message sent mid-answer no longer gets lost, and a new chat remembers the model you last picked.</li>
+                </ul>
+
+                <h3>Meetings</h3>
+                <ul>
+                <li><b>Recording no longer ducks your other audio.</b> Starting a meeting used to quieten whatever else you were listening to.</li>
+                <li>"Recover missed speech" only appears on meetings that actually missed some.</li>
+                </ul>
+
+                <p>Questions or something broken? Email <a href="mailto:howdy@dooze.app">howdy@dooze.app</a>.</p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/sebp90/dooze-updates/releases/download/v1.19.1.0/dooze-Installer.dmg"
+                length="38082538"
+                type="application/octet-stream"
+                sparkle:edSignature="vuWiFJ43r7wb960ojZ276UfuMQTSmA9XC65KtS4L26jlltm0xCBudMjK+dntBH/FGVb+3qRoCqiDGo4IatxaBg=="/>
+        </item>
+        <item>
             <title>1.15.0.0</title>
             <pubDate>Mon, 14 Sep 2026 21:40:28 +0000</pubDate>
             <sparkle:version>62</sparkle:version>
