@@ -5,6 +5,47 @@
         <description>Most recent updates for Dooze</description>
         <language>en</language>
         <item>
+            <title>1.23.2.0</title>
+            <pubDate>Thu, 17 Sep 2026 18:56:47 +0000</pubDate>
+            <sparkle:version>64</sparkle:version>
+            <sparkle:shortVersionString>1.23.2.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>What's new in 1.23.2.0</h2>
+
+                <p>Zoom on the canvas, chats that name themselves, draft pull requests, and a batch of fixes to the build-in-a-repo flow.</p>
+
+                <h3>Canvas</h3>
+                <ul>
+                <li><b>Pinch to zoom.</b> A two-finger trackpad pinch zooms whatever you are looking at. Command and plus or minus steps it, Command zero fits the page, and the percentage in the corner tracks live.</li>
+                <li><b>Old documents and presentations open again.</b> Reopening a past chat reliably brings its pages and decks back into the canvas.</li>
+                </ul>
+
+                <h3>Chat</h3>
+                <ul>
+                <li><b>Chats name themselves.</b> After your first message and the reply, the chat takes a real title instead of staying "New chat" — and the sidebar follows.</li>
+                <li><b>Rename from the header.</b> Double-click the title, or focus it and press Enter, to edit it in place.</li>
+                <li><b>Long code blocks wrap</b> instead of scrolling sideways, in chat and on the canvas.</li>
+                </ul>
+
+                <h3>Pull requests</h3>
+                <ul>
+                <li><b>Open a pull request as a draft.</b> The chevron next to Create PR now opens an action menu with the draft option.</li>
+                <li><b>The changes card folds a long file list</b> so a big build cannot push the rest of the card off screen, and the GitHub strip stays readable at narrow widths.</li>
+                <li><b>It counts only your changes after a rebase.</b> Rebasing a build no longer inflates the count with work that was already upstream.</li>
+                <li><b>The card keeps up with GitHub.</b> Close or merge a PR outside Dooze and the card reflects it instead of offering a dead button.</li>
+                <li><b>The changed-files list agrees with the rest of the chat</b> and survives reopening the conversation.</li>
+                </ul>
+
+                <p>Questions or something broken? Email <a href="mailto:howdy@dooze.app">howdy@dooze.app</a>.</p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/sebp90/dooze-updates/releases/download/v1.23.2.0/dooze-Installer.dmg"
+                length="38174404"
+                type="application/octet-stream"
+                sparkle:edSignature="SAMfV7LheI4WUFJctVzXsNnkgvgg3mRVCkoBAxjkSXRbngla+JXfGYpWawLNEpScQA5jcoAAb12KtkQs0vCgBA=="/>
+        </item>
+        <item>
             <title>1.19.1.0</title>
             <pubDate>Wed, 16 Sep 2026 18:30:27 +0000</pubDate>
             <sparkle:version>63</sparkle:version>
