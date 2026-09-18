@@ -5,6 +5,42 @@
         <description>Most recent updates for Dooze</description>
         <language>en</language>
         <item>
+            <title>1.24.1.0</title>
+            <pubDate>Fri, 18 Sep 2026 15:25:33 +0000</pubDate>
+            <sparkle:version>65</sparkle:version>
+            <sparkle:shortVersionString>1.24.1.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>What's new in 1.24.1.0</h2>
+
+                <p>A calmer Library, a pull-request card you can dismiss, and a quieter home screen.</p>
+
+                <h3>Library</h3>
+                <ul>
+                <li><b>Opening the Library no longer drops you into Meetings.</b> It opens on a real "All" feed of everything you have made and recorded, in one place.</li>
+                <li><b>Browse without committing.</b> Pages and decks open in a browse-mode canvas, so you can look through past work without it taking over the window.</li>
+                </ul>
+
+                <h3>Pull requests</h3>
+                <ul>
+                <li><b>Dismiss the PR card</b> when you are done with it, instead of living with it for the rest of the conversation.</li>
+                <li><b>A permanent live status pill</b> so you can tell at a glance whether the agent is working, waiting on you, or finished.</li>
+                </ul>
+
+                <h3>Home</h3>
+                <ul>
+                <li><b>The "Jump back in" rows are quieter.</b> Lighter type and tighter spacing, so recent work reads as a calm list under the composer rather than competing with it.</li>
+                </ul>
+
+                <p>Questions or something broken? Email <a href="mailto:howdy@dooze.app">howdy@dooze.app</a>.</p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/sebp90/dooze-updates/releases/download/v1.24.1.0/dooze-Installer.dmg"
+                length="38180203"
+                type="application/octet-stream"
+                sparkle:edSignature="75cHqtpWKKUs7Uxa1yL0Ab+u4XsfneSKKcuYVucTc/hyoc8Jc1Ua4/mNmdHv9SFEri0iRhOwkjqAT2iBlAStAQ=="/>
+        </item>
+        <item>
             <title>1.23.2.0</title>
             <pubDate>Thu, 17 Sep 2026 18:56:47 +0000</pubDate>
             <sparkle:version>64</sparkle:version>
