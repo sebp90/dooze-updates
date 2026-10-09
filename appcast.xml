@@ -5,6 +5,63 @@
         <description>Most recent updates for Dooze</description>
         <language>en</language>
         <item>
+            <title>1.34.2.0</title>
+            <pubDate>Fri, 09 Oct 2026 16:58:46 +0000</pubDate>
+            <sparkle:version>66</sparkle:version>
+            <sparkle:shortVersionString>1.34.2.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.4</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>What's new in 1.34.2.0</h2>
+
+                <p>Point an agent at a real repo and watch it work: a live preview of the site it is building, a pull request at the end, and settings that finally live in one place.</p>
+
+                <h3>Build in a real repo</h3>
+                <ul>
+                <li><b>Connect a git repo to a chat</b> and your own Claude or ChatGPT agent works in it. Paste a URL or browse to a folder — it attaches through a git worktree with no multi-gigabyte copy, and connecting no longer blocks you while it sets up.</li>
+                <li><b>Open a pull request without leaving Dooze</b>, as a draft if you want. The card shows the PR number and whether it is open or merged, and keeps up if you close or merge it on GitHub.</li>
+                <li><b>Click a changed file to see the redline</b> — the actual diff, with the file list folded when a build touches a lot.</li>
+                <li><b>Hand work between agents.</b> A chat can carry its context across providers, and the agent can ask another model for a second opinion.</li>
+                </ul>
+
+                <h3>See the site as it is built</h3>
+                <ul>
+                <li><b>A live preview beside the chat.</b> When the agent edits a site, the running page appears and refreshes as it works.</li>
+                <li><b>Mark up the live page</b> the way you mark up a screenshot, and the agent picks up your notes.</li>
+                <li><b>The agent can see its own work</b> — it screenshots the running site and reads the console, so it catches a broken layout without you describing it.</li>
+                </ul>
+
+                <h3>Meetings</h3>
+                <ul>
+                <li><b>Recording was rebuilt end to end.</b> The far side of a call is captured directly rather than through the speakers, your microphone runs through voice processing, and the saved transcript now comes from a careful second pass over the audio instead of the live one.</li>
+                <li><b>Recording no longer ducks your other audio</b> when it starts.</li>
+                <li><b>Drop in an audio file</b> and Dooze transcribes it on device, then links it as a meeting you can ask about.</li>
+                </ul>
+
+                <h3>Everywhere else</h3>
+                <ul>
+                <li><b>Settings moved into the app</b> — one surface with a setup checklist, model management with download progress, and storage cleanup with real space estimates.</li>
+                <li><b>Chats name themselves</b> from the first exchange, and you can rename one from its header.</li>
+                <li><b>Pinch to zoom on the canvas</b>, with Command 0 to fit.</li>
+                <li><b>Move a chat between the panel and the full-screen app</b> without losing your place.</li>
+                <li>Notes open a new note by default, and the Library opens on everything you have made rather than jumping to Meetings.</li>
+                </ul>
+
+                <h3>Fixes</h3>
+                <ul>
+                <li><b>GPT-6 models work again</b> for people who let Dooze install Codex — the bundled version was too old to run them.</li>
+                <li>Selecting a repo no longer clears what you had already typed.</li>
+                <li>Long code blocks wrap instead of scrolling sideways, and the repo picker connects on one click.</li>
+                </ul>
+
+                <p>Questions or something broken? Email <a href="mailto:howdy@dooze.app">howdy@dooze.app</a>.</p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/sebp90/dooze-updates/releases/download/v1.34.2.0/dooze-Installer.dmg"
+                length="37989829"
+                type="application/octet-stream"
+                sparkle:edSignature="de/EdPt16YZ0212cQcoUnSJjKwAGZrzX+N5Vemyz5wY7ql23Hu+j35yF5bLFhumm4LUALlK/NDASRKxqYX9hBg=="/>
+        </item>
+        <item>
             <title>1.24.1.0</title>
             <pubDate>Fri, 18 Sep 2026 15:25:33 +0000</pubDate>
             <sparkle:version>65</sparkle:version>
