@@ -5,6 +5,57 @@
         <description>Most recent updates for Dooze</description>
         <language>en</language>
         <item>
+            <title>1.35.0.0</title>
+            <pubDate>Tue, 03 Nov 2026 20:34:27 +0000</pubDate>
+            <sparkle:version>70</sparkle:version>
+            <sparkle:shortVersionString>1.35.0.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.4</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>What's new in 1.35.0.0</h2>
+
+                <p>The agent you point at a repo is a lot more trustworthy this release: you can steer it mid-answer, see what a turn costs, undo what it wrote, and it tells you the truth when something fails.</p>
+
+                <h3>Working with an agent</h3>
+                <ul>
+                <li><b>Correct a running turn without waiting.</b> Type while the agent is working and it takes the new direction instead of finishing the wrong thing first.</li>
+                <li><b>Undo file changes.</b> A turn's edits can be rolled back from the chat.</li>
+                <li><b>See what a turn costs</b> — tokens used and how much context is left, with a heads-up at 80% and the choice to extend or wrap up.</li>
+                <li><b>Background work is first-class.</b> Long jobs keep running with their own bounds and ping you when they land, and the dock badges when an agent needs you.</li>
+                <li><b>Failures read honestly.</b> A denied tool is a deliberate stop rather than an error, a stuck step says so, tool output says when it was truncated, and a Codex turn is only "failed" when it actually failed.</li>
+                <li><b>Set a repo up once.</b> A <code>dooze.json</code> in your repo tells the agent how to install and run it.</li>
+                <li>Agents left running are reclaimed when the app restarts instead of lingering.</li>
+                </ul>
+
+                <h3>Full-screen</h3>
+                <ul>
+                <li><b>Folders in history.</b> Organise chats and notes into folders and navigate them from the sidebar.</li>
+                <li><b>Sidebar redesign</b> — one glyph family, ordered by what you touched last.</li>
+                <li><b>Resize the chat column</b> with a keyboard-accessible divider that sticks.</li>
+                <li>Sources collapse into a compact stack instead of a long list.</li>
+                </ul>
+
+                <h3>Sharing</h3>
+                <ul>
+                <li><b>Share with specific people by email</b>, managed from one view alongside your public links.</li>
+                </ul>
+
+                <h3>Fixes</h3>
+                <ul>
+                <li><b>You should stop getting signed out.</b> Another round of work on the credential path, with a durable record and better diagnostics when it does go wrong.</li>
+                <li><b>Your agents show up instantly</b> when you open the app, instead of taking a few seconds to appear in the picker and Settings — and Settings now updates the moment you sign an account in or out.</li>
+                <li>Reopening a chat recovers an artifact you had edited, clicking a note in history opens that note, and the working indicator stays pinned to the bottom of the conversation.</li>
+                <li>A sharing outage now reads as a server problem instead of suggesting you change your link settings.</li>
+                </ul>
+
+                <p>Questions or something broken? Email <a href="mailto:howdy@dooze.app">howdy@dooze.app</a>.</p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/sebp90/dooze-updates/releases/download/v1.35.0.0/dooze-Installer.dmg"
+                length="39284759"
+                type="application/octet-stream"
+                sparkle:edSignature="NDPeZoduaAXlmBLObsnyOxJs+1oQMmfXfVFPZEntXERHqQHX1GwY+6TVrTxd3d6rTyJDg0kW3kKcFs6FzDGMAg=="/>
+        </item>
+        <item>
             <title>1.34.2.0</title>
             <pubDate>Fri, 09 Oct 2026 16:58:46 +0000</pubDate>
             <sparkle:version>66</sparkle:version>
