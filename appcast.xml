@@ -5,6 +5,52 @@
         <description>Most recent updates for Dooze</description>
         <language>en</language>
         <item>
+            <title>1.37.19.0</title>
+            <pubDate>Thu, 19 Nov 2026 20:48:05 +0000</pubDate>
+            <sparkle:version>72</sparkle:version>
+            <sparkle:shortVersionString>1.37.19.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.4</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>What's new in 1.37.19.0</h2>
+
+                <p>Your canvas now tells the truth about the file on disk, you can sign in to Codex with ChatGPT, and the agent is harder to wedge.</p>
+
+                <h3>Canvas</h3>
+                <ul>
+                <li><b>An edited document no longer shows you an old version.</b> Dooze was comparing a file against a freshness stamp it had taken from a second read, so a page could look current while showing content you had already deleted. The stamp now comes from the same bytes that were saved, and it covers the page's stylesheets and images too, not just the page itself.</li>
+                <li><b>The agent can check and refresh its own work.</b> It can ask whether a document is stale and pull the file's current contents back into the canvas.</li>
+                </ul>
+
+                <h3>Agents</h3>
+                <ul>
+                <li><b>Sign in to Codex with your ChatGPT account</b>, instead of pasting a key.</li>
+                <li><b>Model names stay current.</b> The picker lists what your subscription actually offers and drops version numbers that go stale.</li>
+                <li><b>Stop always stops.</b> Agent input and output are bounded so a runaway process cannot wedge the app, and a stuck Stop settles.</li>
+                <li><b>An interrupted turn is not lost.</b> Quitting mid-turn now writes the partial answer to disk.</li>
+                <li><b>Costs are counted once.</b> A chat's running cost stopped double-counting every turn after the first.</li>
+                <li>A healthy turn no longer shows a usage-limit banner, and notices have their own place instead of interrupting the reply.</li>
+                </ul>
+
+                <h3>Repos</h3>
+                <ul>
+                <li><b>A connected repo stays put.</b> Signing out and back in keeps the chat's working folder, and sending a message no longer recreates a checkout you deleted.</li>
+                <li><b>Connecting a repo keeps your secrets out of it</b>, and no longer blames the setup for files it did not touch.</li>
+                </ul>
+
+                <h3>Changed</h3>
+                <ul>
+                <li><b>Polish and Summarize are gone.</b> Ask the agent instead — it does both, with your context. The <code>/</code> menu now lists only your own agent's skills.</li>
+                </ul>
+
+                <p>Questions or something broken? Email <a href="mailto:howdy@dooze.app">howdy@dooze.app</a>.</p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/sebp90/dooze-updates/releases/download/v1.37.19.0/dooze-Installer.dmg"
+                length="39925439"
+                type="application/octet-stream"
+                sparkle:edSignature="P2lbfwzs6Lz85ET+jBOtmJOVQYYH0cHtUwm4gy+DDmmNCKZ5CLiZaexmgObBxxIdYtwO2Mv9cqrJNS7cKo9hBw=="/>
+        </item>
+        <item>
             <title>1.35.0.0</title>
             <pubDate>Tue, 03 Nov 2026 20:34:27 +0000</pubDate>
             <sparkle:version>70</sparkle:version>
